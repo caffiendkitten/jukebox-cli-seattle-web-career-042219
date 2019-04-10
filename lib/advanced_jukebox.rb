@@ -56,11 +56,11 @@ def run(my_songs)
   when command = 'help'
     help
   when command = 'play'
-    play(songs)
+    play(my_songs)
   when command = 'list'
-    list(songs)
+    list(my_songs)
   when command = 'exit'
-    exit
+    exit_jukebox
   else
     puts "Please enter a command:"
   end
