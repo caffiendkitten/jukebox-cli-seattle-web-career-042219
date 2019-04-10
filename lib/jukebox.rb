@@ -18,13 +18,6 @@ def help
   puts "- exit : exits this program"
 end
 
-=begin
-#play
-  can find a song when given a number from the user (FAILED - 1)
-  can find a song when given a full song name (FAILED - 2)
-  returns an error when given a number that does not correspond to a song (FAILED - 3)
-  returns an error when given a name that does not correspond to an existing song (FAILED - 4)
-=end
 def play(songs)
   max_song_num = songs.length
   puts "Please enter a song name or number:"
@@ -68,7 +61,4 @@ def run(songs)
   else
     puts "Please enter a command:"
   end
-
-
-
 end
