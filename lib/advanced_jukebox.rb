@@ -45,7 +45,8 @@ def play(my_songs)
   #  puts "Playing #{songs[user_response.to_i-1]}"
   if my_songs.keys.include?(user_response)
     puts "Playing #{user_response}"
-    open <file path>
+    #open <file path>
+    system 'open ' << my_songs[user_response]
   else
     puts "Invalid input, please try again"
   end
